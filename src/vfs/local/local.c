@@ -169,7 +169,7 @@ local_chown (const vfs_path_t * vpath, uid_t owner, gid_t group)
 /* --------------------------------------------------------------------------------------------- */
 
 static int
-local_utime (const vfs_path_t * vpath, const mc_timesbuf_t * times)
+local_utime (const vfs_path_t * vpath, mc_timesbuf_t * times)
 {
     int ret;
     const vfs_path_element_t *path_element;

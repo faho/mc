@@ -1324,7 +1324,7 @@ fish_chown (const vfs_path_t * vpath, uid_t owner, gid_t group)
 /* --------------------------------------------------------------------------------------------- */
 
 static time_t
-fish_get_atime (const mc_timesbuf_t * times)
+fish_get_atime (mc_timesbuf_t * times)
 {
     time_t ret;
 
@@ -1339,7 +1339,7 @@ fish_get_atime (const mc_timesbuf_t * times)
 /* --------------------------------------------------------------------------------------------- */
 
 static time_t
-fish_get_mtime (const mc_timesbuf_t * times)
+fish_get_mtime (mc_timesbuf_t * times)
 {
     time_t ret;
 
@@ -1354,7 +1354,7 @@ fish_get_mtime (const mc_timesbuf_t * times)
 /* --------------------------------------------------------------------------------------------- */
 
 static int
-fish_utime (const vfs_path_t * vpath, const mc_timesbuf_t * times)
+fish_utime (const vfs_path_t * vpath, mc_timesbuf_t * times)
 {
     gchar *shell_commands = NULL;
     char utcatime[16], utcmtime[16];

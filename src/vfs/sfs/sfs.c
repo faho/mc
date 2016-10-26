@@ -319,7 +319,7 @@ sfs_chown (const vfs_path_t * vpath, uid_t owner, gid_t group)
 /* --------------------------------------------------------------------------------------------- */
 
 static int
-sfs_utime (const vfs_path_t * vpath, const mc_timesbuf_t * times)
+sfs_utime (const vfs_path_t * vpath, mc_timesbuf_t * times)
 {
     int ret;
 
